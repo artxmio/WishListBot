@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WishlistBot.Application.Interfaces;
-using WishlistBot.Core;
+using WishlistBot.Domain;
 using WishlistBot.Persistanse.EntityTypeConfiguration;
 
 namespace WishlistBot.Persistanse;

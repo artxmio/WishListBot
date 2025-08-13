@@ -1,4 +1,4 @@
-﻿namespace WishlistBot.Core;
+﻿namespace WishlistBot.Domain;
 
 public class Wish
 {
