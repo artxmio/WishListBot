@@ -1,5 +1,6 @@
 using Telegram.Bot;
 using Serilog;
+using WishlistBot.Persistanse;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,7 @@ builder.Services.AddHttpClient("tg")
     });
 
 builder.Services.AddControllers();
+builder.Services.AddDatabase(builder.Configuration);
 
 ////Service to set/delete webhooks
 //builder.Services.AddHostedService<ConfigureTelegramWebhook>();
