@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="13.0.0" />
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
+    <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.8" />
@@ -22,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WishlistBot.Core\WishlistBot.Core.csproj" />
+    <ProjectReference Include="..\WishlistBot.Core\WishlistBot.Domain.csproj" />
   </ItemGroup>
 
 </Project>

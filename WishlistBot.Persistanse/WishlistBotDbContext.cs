@@ -8,9 +8,9 @@ namespace WishlistBot.Persistanse;
 public class WishlistBotDbContext(DbContextOptions<WishlistBotDbContext> options)
     : DbContext(options), IWishlistBotDbContext
 {
-    public DbSet<User> Users { get; } = null!;
-    public DbSet<Wishlist> Wishlists { get; } = null!;
-    public DbSet<Wish> Wishes { get; } = null!;
+    public DbSet<User> Users { get; set; } = null!;
+    public DbSet<Wishlist> Wishlists { get; set; } = null!;
+    public DbSet<Wish> Wishes { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

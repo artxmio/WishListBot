@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.8" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.8" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.8" />
     <PackageReference Include="Serilog" Version="4.3.1-dev-02373" />
     <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
@@ -21,6 +21,12 @@
   <ItemGroup>
     <ProjectReference Include="..\WishlistBot.Application\WishlistBot.Application.csproj" />
     <ProjectReference Include="..\WishlistBot.Persistanse\WishlistBot.Persistanse.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="WishlistBotDb.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

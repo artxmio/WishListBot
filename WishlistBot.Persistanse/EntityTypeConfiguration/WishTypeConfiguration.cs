@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using WishlistBot.Core;
+using WishlistBot.Domain;
 
 namespace WishlistBot.Persistanse.EntityTypeConfiguration;
 

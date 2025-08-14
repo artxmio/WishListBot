@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WishlistBot.Core;
+using WishlistBot.Domain;
 
 namespace WishlistBot.Application.Interfaces;
 

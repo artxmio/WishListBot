@@ -18,7 +18,7 @@ public static class DependencyInjection
         });
 
         services.AddScoped<IWishlistBotDbContext>(provider =>
-            provider.GetService<WishlistBotDbContext>()
+            provider.GetRequiredService<WishlistBotDbContext>()
                 ?? throw new NullReferenceException("Provider cant't be null"));
 
         return services;

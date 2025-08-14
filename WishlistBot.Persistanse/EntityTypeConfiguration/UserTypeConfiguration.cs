@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using WishlistBot.Core;
+using WishlistBot.Domain;
 
 namespace WishlistBot.Persistanse.EntityTypeConfiguration;
 
@@ -14,10 +14,8 @@ public class UserTypeConfiguration
         builder.Property(u => u.UserName)
             .IsRequired()
             .HasMaxLength(255);
-        builder.Property(u => u.TelegramId)
+        builder.Property(u => u.TelegramUserId)
             .IsRequired();
-        builder.HasIndex(u => u.TelegramId)
-            .IsUnique();
         builder.Property(u => u.CreatedTime)
             .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
